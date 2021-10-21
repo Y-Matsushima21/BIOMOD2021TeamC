@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<!--　<!DOCTYPE html>はHTMLを書きますという宣言  --> 
+
+<!-- wikiの設定を<head>要素の中にかいていきます。タイトルや参照するほかのファイルを指定したりします --> 
+<html>
+    
+    <head>
+        <!-- wikiの設定を<head>要素の中にかいていきます。タイトルや参照するほかのファイルを指定したりします -->
+        
+        <meta charset="utf-8">
+        <!--　Wikiを書く際の決まりです。文字の設定です。  --> 
+        <title>TeamB wiki</title>
+    　　　<!--  ページタイトル -->
+        <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+     　　<!--  これは各デバイスである程度きれいに表示するため設定です。 --> 
+        
+        <link rel="stylesheet" media="all" type="text/css" href="aratana.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="style.css" />
+　　　　　<!-- css_failを参照するコマンドです。 -->
+        
+    </head>
+    
+     <body>
+    
+       <!--見出しの部分-->
+    <div class="ue">
+       <ul class="midashi">
+           <a id="IdeaTop">BIOMOD2021 TeamC </a>
+       </ul>
+        <ul class="title">
+                <img src="ヘッド.jpg">
+               <a>Project Idea</a>
+        </ul>
+         
+          <!--ヘッダーの編集-->
+     <ul class="menu">
+         
+        <li class="category1">
+         <span class="menu1"><a href = "index.html"> HOME</a></span>
+             <ul class="menu2">
+                 <li class="menu3"><a href="index.html#Abstract">Abstract</a></li>
+                 <li class="menu3"><a href="index.html#YouTube">YouTube</a></li>
+             </ul>
+         </li>
+         
+         <li class="category1">
+         <span class="menu1"> <a href = "Motivation.html">Motivation</a></span>
+                 <ul class="menu2">
+                    
+                 </ul>
+         </li>
+         
+         <li class="category1">
+         <span class="menu4"> <a>Project&nbsp;Idea</a></span>
+            
+         </li>
+         
+         <li class="category1">
+       <span class="menu1"> <a href = "design.html">Method</a></span>
+             <ul class="menu2">
+                 
+                 
+             </ul>
+         </li>
+               
+             <li class="category1">
+         <span class="menu1"> <a href = "Simulation.html">Simulation</a></span>
+                 <ul class="menu2">
+                    
+                 </ul>
+         </li>
+    <li class="category1">
+       <span class="menu1"> <a href = "Future.html">Future</a></span>
+        <ul class="menu2">
+            <li class="menu3"><a href="Future.html#Future">Future</a></li>
+            <li class="menu3"><a href="Future.html#ELSI">ELSI</a></li>
+        </ul>
+         </li>
+        
+        <li class="category1">
+         <span class="menu1"> <a href = "team.html">team</a></span>
+            <ul class="menu2">
+              
+            </ul>
+         </li>
+     </ul>
+     </div>
+              
+  
+          <div class="main">
+         
+              <a id="Solution"> <h1>Solution</h1></a>
+            
+<p>&emsp;解決方法を大まかに
+</p>   
+               <p>1.ドローンを使うことでサバクトビバッタの大群を検知まず，サバクトビバッタの集団の報告を受けることで，ドローンをサバクトビバッタの大群へ向かわせます
+              </p>
+<p>
+2.コンピュータで分子ロボットを放出する地点までの経路を算出
+次に，ドローンの位置情報から，コンピュータを用いて分子ロボットを放出する地点までの最適な経路を作成します
+              </p>
+              <p>
+3.ドローンが４VAを放出しながらバッタを誘導
+サバクトビバッタは，集合性フェロモンの4VAに集まる性質がある．私たちはこの性質を用いて，ドローンから4VAを放出しながら目標の地点までバッタを誘導します
+              </p>
+              <p>
+4.分子ロボットによる4VAの濃度上昇の検知とルチンの放出
+　　水滴内で4VAの濃度を調べることで、ドローンとバッタから放出される4VAの濃度の合計を調べます。その濃度がドローンのみから放出される4VAの濃度を超えたことを検知したとき、外部リポソームとルチンを包む内部リポソームの膜同士が融合し、ルチンが放出されます。
+                  </p>
+              <p>
+5.ルチンの濃度上昇の検知によるルチンの放出の停止
+　　水滴内のルチンの濃度を検知し一定以上になった場合、外部リポソームと内部リポソームの膜融合を止め、ルチンの放出を停止します。
+    </p>
+              <p>
+1.Using Drones to Detect Swarms of Saber-toothed Grasshoppers
+First, the drone is directed to the swarm of mackerel grasshoppers by receiving a report of the swarm.
+</p>
+              <p>
+2.The computer calculates the path to the point where the molecular robot will be released.
+Next, from the location of the drone, we use a computer to create an optimal path to the point where the molecular robot will be released.
+</p>
+              <p>
+3.The drone guides the grasshoppers while releasing the 4VA.
+Sabaktobi grasshoppers have a tendency to be attracted to the aggregation pheromone 4VA. We use this property to guide the grasshopper to the target point while the drone emits 4VA.
+                  </p>
+              <p>
+4. Detection of increased concentration of 4VA and release of Rutin by molecular robot
+   By examining the concentration of 4VA in the water droplets attached to the grasshopper, the total concentration of 4VA released from the drone and the grasshopper is examined. When the concentration of 4VA is detected to exceed the concentration of 4VA released from the drone alone, the membrane of the outer liposome and the membrane of the inner liposome containing Rutin fuse with each other and Rutin is released.
+                  </p>
+              <p>
+    5. Stopping the release of Rutin by detecting the increase in Rutin concentration
+   The system detects the concentration of Rutin in the water droplet, and if it exceeds a certain level, it stops the membrane fusion between the outer and inner liposomes, thus stopping the release of Rutin.
+
+              </p>
+              
+              
+            <a id="StrongPoint"><h1>StrongPoint強み</h1></a>
+   
+              <a id="brief">  <h2>The brief introduction</h2></a>
+              <p>&emsp;簡単な説明
+            </p>
+             
+           
+                  
+            
+              <a id="Comparison"> <h2>Comparison with the common method</h2></a>
+              
+             
+           <p>&emsp;一般的な方法との比較・利点
+           </p>
+           <p>
+           &emsp; ルチンは植物の二次代謝物であるため、自然で速やかに分解される上、生物蓄積もしにくい。
+           </p>
+                        
+           <p>&emsp;群れの量，バッタの量に対応させて、最低限の毒の量に制御できる
+            </p>
+              
+            <p>&emsp;人が撒くと危険なので、安全に撒ける。
+            </p>
+              
+            
+              <p>&emsp;
+
+                </p>
+            
+              <h2>Reference</h2>
+              <p>(書き方例として残している)
+              </p>
+              <p>(1)Dirks, Robert M., and Niles A. Pierce."Triggered amplification by hybridization chain reaction." Proceedings of the National Academy of Sciences 101.43 (2004): 15275-15278.</p>
+            　<p>参考文献</p>
+              
+              
+                     　　</div>
+               
+          <div class="submainIdea">
+       
+         <div class="yoko">
+           <ul>
+               <a href="#Solution" ><li class="omo">Solution</li></a>
+               <a href="#StrongPoint"> <li class="omo">Strong Point</li></a>
+               <a href="#brief"><li class="sabu">The brief introduction</li></a>
+               <a href="#Comparison"><li class="sabu">Comparison with the common method</li></a>
+               
+               <a href="#IdeaTop"><li class="omo">Top</li></a>
+           </ul>
+       </div> 
+         </div>
+       
+    </body>
+</html>
