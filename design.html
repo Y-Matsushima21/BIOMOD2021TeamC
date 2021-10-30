@@ -161,14 +161,14 @@ Or35が4VAを検知すると、分子ロボット内に分散液中のカリウ�
            ・4-Vinyl anisole (4VA)
            </p>
            <p>
-           4VA is a pheromone released from the body and feces of locusts, and it shows attractiveness regardless of the locust's developmental stage, sex, and whether it is a solitary or gregarious phase.
+           4VA is a pheromone released from the body and feces of locusts, and it shows attractiveness regardless of the locust's developmental stage, sex, and whether it is a solitary or gregarious phase. It is particularly attractive to locusts in the swarming phase, and the amount of 4VA released increases as the population density increases.
            </p>
            
            <p>
            ・Or35
            </p>
            <p>
-           Or35 is an olfactory receptor specific for 4VA in the antennae of locusts. It is a seven-fold transmembrane protein that depolarizes the cell membrane upon receiving a signal and converts it into an electrical signal. It is also a plasma membrane protein that passively transmits cations through the plasma membrane when it detects 4VA, and is called a "cation channel.
+           Or35 is an olfactory receptor specific for 4VA in the antennae of locusts. It is a seven-fold transmembrane protein that depolarizes the cell membrane upon receiving a signal and converts it into an electrical signal. It is also a cell membrane protein that passively transmits cations through the cell membrane when it detects 4VA, and is called a "cation channel.
            </p>
            
            <p>
@@ -186,13 +186,13 @@ Or35が4VAを検知すると、分子ロボット内に分散液中のカリウ�
            <a id="series"><h2>A series of flows</h2></a>
            
             <p>
-           &emsp;We propose a molecular robot that can release or inhibit the release of rutin by detecting 4VA and rutin. This molecular robot is composed of an inner liposome of several hundred nm and an outer liposome of several μm.
+           &emsp;We propose a molecular robot that can release or inhibit the release of rutin by detecting 4VA and rutin. This molecular robot is composed of the inner liposome of several hundred nm and the outer liposome of several μm.
            </p>
            <p>
-           Or35 and rutin aptamers are bound to the outside of the lipid bilayer of Outer liposomes.By adding potassium ions to the dispersion of the Outer liposome, potassium ions can permeate into the Outer liposome when it is bound to 4VA. Membrane fusion peptides are also bound to the inner lipid bilayer.
+           Or35 and rutin aptamers are bound to the outside of the lipid bilayer of Outer liposomes.By adding potassium ions to the dispersion of the Outer liposome, potassium ions can permeate into the Outer liposome when Or35 detects 4VA. Membrane fusion peptides are also bound to the inner lipid bilayer.
            </p>
            <p>
-           The outside lipid bilayer of the inner liposome contains the membrane fusion peptides and the Poly Ethylene Glycol(PEG) conjugated double-stranded DNA, and the peptides are protected by PEG. Rutin is encapsulated in the inner liposome.
+           The outside lipid bilayer of the inner liposome contains the membrane fusion peptides and the Poly Ethylene Glycol(PEG) conjugated double-stranded DNA, and the peptides are protected by PEG-DNA. Rutin is encapsulated in the inner liposome.
            </p>
            <p>
                The sequence of the rutin release mechanism of the molecular robot is described below.
@@ -201,7 +201,7 @@ Or35が4VAを検知すると、分子ロボット内に分散液中のカリウ�
                First, 4VA is detected, and potassium ions permeate into the molecular robot, releasing the input DNA.  Next, when the input DNA reaches the threshold, the output DNA is released. The PEG-DNA protecting the membrane fusion peptide is released by the output DNA, which leads to membrane fusion between the Outer and Inner liposomes and the release of rutin.
            </p>
            <p>
-        The sequence of the rutin release inhibition mechanism is as follows: First, the concentration of rutin in the dispersion is detected and the input DNA2 is released. Next, when the input DNA2 reaches a threshold value, the output DNA2 is released. Hybridization of the output DNA2 with the input DNA stops the release of output DNA,and prevents further membrane fusion of  liposomes and inhibits the release of rutin.
+        The sequence of the rutin release inhibition mechanism is described below. First, the concentration of rutin in the dispersion is detected and the input DNA2 is released. Next, when the input DNA2 reaches a threshold value, the output DNA2 is released. Hybridization of the output DNA2 with the input DNA stops the release of output DNA,and prevents further membrane fusion of  liposomes and inhibits the release of rutin.
            </p>
            
            
@@ -215,20 +215,20 @@ Or35が4VAを検知すると、分子ロボット内に分散液中のカリウ�
            ・Sensor
            </p>
            <p>
-               When 4VA binds to Or35 of Outer liposome, potassium ions in the dispersion permeate into the Outer liposome.  A double-stranded DNA consisting of G-rich DNA and input DNA exists in the liposome, and the G-rich portion reacts with potassium ions to form a G quadruplex. This will narrow the hybridization region with the input DNA and destabilize the binding, resulting in the release of the input DNA.
+               When 4VA detects Or35 of Outer liposome, potassium ions in the dispersion permeate into the Outer liposome.  A double-stranded DNA consisting of G-rich DNA and input DNA exists in the liposome, and the G-rich DNA reacts with potassium ions to form a G quadruplex. This will narrow the hybridization region with the input DNA and destabilize the binding, resulting in the release of the input DNA.
            </p>
            <p>
            ・Processor
            </p>
            <p>
-           A DNA-based digital logical circuit, Threshold Gate, is used. In the threshold gate, only the gate strand is consumed and no output DNA is released unless a set threshold amount of input DNA is bound. As a result, output DNA with a sequence complementary to that of PEG-DNA is released when the detected concentration of 4VA exceeds the threshold value.
+           A DNA-based digital logical circuit, Threshold Gate, is used. In the threshold gate, only the gate strand is consumed and no output DNA is released unless a set threshold amount of input DNA is bound.In consequence, the output DNA with a complementary sequence to PEG-DNA is released only when the detected concentration of 4VA exceeds a threshold value.
            </p>
            <p>
            ・Actuator
            </p>
            <p>
                The sequence of the PEG-single-strand DNA and the complementary single-strand DNA of the PEG-double-strand DNA on the Inner liposome membrane are not completely complementary. Since the output DNA released from the processor is completely complementary to the PEG-single-stranded DNA, a DNA strand substitution reaction occurs. This causes the PEG-DNA to be released from the Inner liposome membrane, exposing the membrane fusion peptide.
-               The membrane fusion peptide exposed on the Inner liposome then binds to the membrane fusion peptide inside the Outer liposome membrane, resulting in membrane fusion and the release of rutin from the Outer liposome.
+               Then, the membrane fusion peptide exposed on the Inner liposome then binds to the membrane fusion peptide inside the Outer liposome membrane, resulting in membrane fusion and the release of rutin from the Outer liposome.
            </p>
            
            <br>
@@ -255,7 +255,32 @@ Or35が4VAを検知すると、分子ロボット内に分散液中のカリウ�
               
            
       <h2>Reference</h2>
-           <p>引用</p>
+           <p>【1】Synthetic beta cells </p>
+           <p>
+               Zhaowei Chen, Jinqiang Wang, Wujin Sun, Edikan Archibong, Anna R Kahkoska, Xudong Zhang, Yue Lu, Frances S Ligler, John B Buse & Zhen Gu ,synthetic beta cells for fusion-mediated dynamic insulin secretion. Nat. Chem. Biol., doi:10.1038/nchembio.2511(2017)
+           </p>
+           
+           <p>【2】4VA,Or35</p>
+           <p>
+               Guo, X., Yu, Q., Chen, D. et al. "4-Vinylanisole is an aggregation pheromone in locusts." , Nature 584, 584-588 (2020)
+           </p>
+           
+            <p>【3】Rutin</p>
+           <p>Wang, Y., Huang, X., Chang, B.H. et al. The survival, growth, and detoxifying enzyme activities of grasshoppers Oedaleus asiaticus (Orthoptera: Acrididae) exposed to toxic rutin. Appl Entomol Zool 55, 385–393 (2020).
+           </p>
+           
+            <p>【4】Threshold</p>
+           <p>Georg Seelig, et al., Enzyme-Free Nucleic Acid Logic Circuits, Science 314, 1585 (2006).
+           </p>
+           
+            <p>【5】Or35</p>
+           <p>Nakagawa T, Pellegrino M, Sato K, Vosshall LB, Touhara K., Amino Acid Residues Contributing to Function of the Heteromeric Insect OlfactoryReceptor Complex., PLoS ONE 7(3), (2012): e32372. doi:10.1371/journal.pone.0032372
+           </p>
+           
+            <p>Membrane transmission</p>
+           <p>Guo Liu, Shan Huang, Xiaochen Liu, Wanzhen Chen, Xin Ma, Shuang Cao, Liping Wang, Lanlan Chen, and Huanghao Yang., DNA-Based Artificial Signaling System Mimicking the Dimerization of Receptors for Signal Transduction and Amplification., Anal. Chem. (2021), 93, 41, 13807-13814
+           </p>
+           
        </div>
        
         <div class="submainMethod">
