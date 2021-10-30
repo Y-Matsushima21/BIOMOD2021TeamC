@@ -111,15 +111,34 @@ As a result, the Tm of (1) is 57°C, indicating that the structure is stable at 
 This suggests that the input DNA is not released at room temperature and that the input DNA is released by the formation of the G-quadruplex.
 </p>
     <div class="gazo">
-              <img src="Tm.png"alt=""width="80%"height="20%">    
+              <img src="Tm.png"alt=""width="80%"height="20%"> 
            </div>
-           <p>&emsp;&emsp;&emsp;&emsp;Fig.1. Melting temperature (Tm) of duplex DNA</p>
+           
+           <p>&emsp;&emsp;&emsp;&emsp;Fig 1. Melting temperature (Tm) of duplex DNA</p>
            
            <br>
            <h2>②Examining whether Output DNA is released</h2>
            <p>&emsp;The TrigerDNA in the previous section is Aout_4VA, and we designed a thresholding_4VA that releases the OutputDNA, namely Thout_4VA, when the concentration of Aout_4VA exceeds a certain level.</p>
            
+           <div class="gazo">
+              <img src="fig2.png"alt=""width="150%"height="70%"> 
+           </div>
+           <p>Fig 2. The reaction of Thresholding_4VA with one output of Thout_4VA at [Thout_4VA]:[ Th2in_4VA]:[Thresholding_4VA]=2:1:1</p>
            
+           <br>
+           <p>First, we used Thresholding_4VA, which combines [Thout_4VA]:[Th2in_4VA]:[thresholding_4VA] = 10:9:1 and outputs one Thout_4VA. The reaction rate was set to 0.0003, the duration of the experiment to 100000s, the concentration of Thresholding_4VA was set to 1nM, the concentration of Th2in_4VA was set to 15nM, and the initial concentration of each Aout_4VA was used to simulate how the concentration of Thout_4VA changes.</p>
+           
+           <div class="gazo">
+              <img src="fig3.png"alt=""width="150%"height="70%"> 
+           </div>
+           <p>Fig 3. Concentration change of Thout_4VA at the initial concentration of each Aout_4VA</p>
+           
+           <br>
+           <p>As a result of the simulation, when the initial concentration of Aout_4VA is low, Thout_4VA hardly outputs, and as the initial concentration of Aout_4VA increases, the concentration of Thout_4VA increases rapidly, so it may be used as a threshold.</p>
+           <p>Next, let's define thresholding_4VA to be thresholding_4VA(10), which reacts with [Thout_4VA]:[Th2in_4VA]:[thresholding_4VA]=10:9:1, and
+[Thout_4VA]:[Th2in_4VA]:[thresholding_4VA]=5:4:1 to react thresholding_4VA is set to thresholding_4VA(5).
+</p>
+           <p></p>
            
            
            <h2>Reference</h2>
